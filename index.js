@@ -27,15 +27,14 @@ const listBelanjaan = (belanjaan) => {
   });
 };
 
-
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-const totalBelanjaan = (belanjaan) => {
-let total = 0;
-  for (const belanja in belanjaan){
+function totalBelanjaan(belanjaan) {
+  let total = 0;
+  for (const belanja in belanjaan) {
     total = total + (belanjaan[belanja].harga * belanjaan[belanja].kuantitas);
   }
   return total;
-};
+}
 
 // ! JANGAN DIMODIFIKASI
 const main = () => {
